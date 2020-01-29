@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfJohnnyBravo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfJohnnyBravo"
+        xmlns:userControls="clr-namespace:WpfJohnnyBravo.UserControls"
+        xmlns:models="clr-namespace:WpfJohnnyBravo.Models"
+        mc:Ignorable="d"
+        Title="MainViewModelWindow" Height="450" Width="800"
+        DataContext="{Binding Source={StaticResource Locator}, Path=MainViewModel}">
+    <Grid>
+        <TabControl>
+           <TabItem Header="Actor">
+               <userControls:ActorDataGrid></userControls:ActorDataGrid>
+           </TabItem>
+            <TabItem Header="Agency">
+                <userControls:AgencyDataGrid></userControls:AgencyDataGrid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
+
