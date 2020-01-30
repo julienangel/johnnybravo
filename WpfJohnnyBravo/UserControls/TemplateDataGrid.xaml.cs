@@ -12,19 +12,20 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfJohnnyBravo.ViewModel.Base;
 using WpfJohnnyBravo.ViewModel.UserControls;
 
 namespace WpfJohnnyBravo.UserControls
 {
     /// <summary>
-    /// Interaction logic for ActorDataGrid.xaml
+    /// Interaction logic for TemplateDataGrid.xaml
     /// </summary>
-    public partial class ActorDataGrid : UserControl
-    {
-        public ActorDataGrid()
+    public partial class TemplateDataGrid : UserControl
+    {     
+        public TemplateDataGrid()
         {
             InitializeComponent();
-            DataContext = new ActorDataGridViewModel();
-        }
+            DataContext = new TemplateDataGridViewModel();
+        }              
     }
 }

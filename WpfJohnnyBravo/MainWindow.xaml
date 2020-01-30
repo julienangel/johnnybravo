@@ -11,11 +11,15 @@
         DataContext="{Binding Source={StaticResource Locator}, Path=MainViewModel}">
     <Grid>
         <TabControl>
-           <TabItem Header="Actor">
-               <userControls:ActorDataGrid></userControls:ActorDataGrid>
-           </TabItem>
+            <TabItem Header="Actor">
+                <userControls:TemplateDataGrid>
+                    <userControls:ActorDataGrid></userControls:ActorDataGrid>
+                </userControls:TemplateDataGrid>
+            </TabItem>
             <TabItem Header="Agency">
-                <userControls:AgencyDataGrid></userControls:AgencyDataGrid>
+                <userControls:TemplateDataGrid>
+                    <userControls:AgencyDataGrid></userControls:AgencyDataGrid>
+                </userControls:TemplateDataGrid>
             </TabItem>
         </TabControl>
     </Grid>

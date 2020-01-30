@@ -31,3 +31,5 @@ C:\Users\skate\source\repos\WpfJohnnyBravo\WpfJohnnyBravo\obj\Debug\UserControls
 C:\Users\skate\source\repos\WpfJohnnyBravo\WpfJohnnyBravo\obj\Debug\UserControls\AgencyDataGrid.g.cs
 C:\Users\skate\source\repos\WpfJohnnyBravo\WpfJohnnyBravo\obj\Debug\UserControls\ActorDataGrid.baml
 C:\Users\skate\source\repos\WpfJohnnyBravo\WpfJohnnyBravo\obj\Debug\UserControls\AgencyDataGrid.baml
+C:\Users\skate\source\repos\WpfJohnnyBravo\WpfJohnnyBravo\obj\Debug\UserControls\TemplateDataGrid.g.cs
+C:\Users\skate\source\repos\WpfJohnnyBravo\WpfJohnnyBravo\obj\Debug\UserControls\TemplateDataGrid.baml

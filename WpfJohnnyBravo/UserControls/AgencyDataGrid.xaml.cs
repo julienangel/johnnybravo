@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfJohnnyBravo.ViewModel.UserControls;
 
 namespace WpfJohnnyBravo.UserControls
 {
@@ -23,6 +24,7 @@ namespace WpfJohnnyBravo.UserControls
         public AgencyDataGrid()
         {
             InitializeComponent();
+            DataContext = new AgencyDataGridViewModel();
         }
     }
 }

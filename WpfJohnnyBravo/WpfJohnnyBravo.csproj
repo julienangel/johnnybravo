@@ -84,11 +84,16 @@
     <Compile Include="UserControls\AgencyDataGrid.xaml.cs">
       <DependentUpon>AgencyDataGrid.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\Base\Class1.cs" />
+    <Compile Include="UserControls\TemplateDataGrid.xaml.cs">
+      <DependentUpon>TemplateDataGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\Base\BaseViewModel.cs" />
+    <Compile Include="ViewModel\Base\IChildGrid.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\Models\ActorViewModel.cs" />
     <Compile Include="ViewModel\UserControls\ActorDataGridViewModel.cs" />
     <Compile Include="ViewModel\UserControls\AgencyDataGridViewModel.cs" />
+    <Compile Include="ViewModel\UserControls\TemplateDataGridViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -107,6 +112,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\AgencyDataGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\TemplateDataGrid.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

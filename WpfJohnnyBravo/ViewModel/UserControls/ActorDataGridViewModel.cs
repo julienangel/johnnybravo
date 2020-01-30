@@ -15,13 +15,19 @@ namespace WpfJohnnyBravo.ViewModel.UserControls
 {
     public class ActorDataGridViewModel : BaseViewModel
     {
+        public override ICommand AddNewCommand { get; set; } = new RelayCommand((() =>
+        {
+            Console.Write("");
+        }));
+        public new string Test { get; set; } = "Puta que pariu";
+
         public ObservableCollection<ActorViewModel> Actors { get; set; }
 
         public ICommand RemoveActorCommand => new RelayCommand<ActorViewModel>((actor =>
         {
             Actors.Remove(actor);
 
-            new ActorService().Remove(actor.Id);
+            //new ActorService().Remove(actor);
         }));
 
         public ActorDataGridViewModel()
@@ -33,7 +39,7 @@ namespace WpfJohnnyBravo.ViewModel.UserControls
         {
             base.Initialize();
 
-            Actors = new ObservableCollection<ActorViewModel>(new ActorService().GetAllActors().Select(x => new ActorViewModel(x.Id, x.Name, x.Age, x.AgencyId));
+            Actors = new ObservableCollection<ActorViewModel>(new ActorService().GetAllActors().Select(x => new ActorViewModel(x.Id, x.Name, x.Age, x.AgencyId)));
 
         }
     }

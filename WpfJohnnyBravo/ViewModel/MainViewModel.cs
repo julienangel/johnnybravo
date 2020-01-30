@@ -1,5 +1,6 @@
 using System.Collections.ObjectModel;
 using System.Windows.Controls;
+using System.Windows.Input;
 using GalaSoft.MvvmLight;
 using WpfJohnnyBravo.Locators;
 using WpfJohnnyBravo.Models;
@@ -27,7 +28,8 @@ namespace WpfJohnnyBravo.ViewModel
         private readonly ActorService _actorService;
 
         public ObservableCollection<ITab> Tabs { get; set; } = new ObservableCollection<ITab>();
-      
+        public override ICommand AddNewCommand { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+
         public MainViewModel()
         {
             //_actorService = actorService;
